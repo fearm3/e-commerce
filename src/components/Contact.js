@@ -12,11 +12,16 @@ const Contact = () => {
             voluptatum. Voluptatum expedita consequuntur, nostrum deserunt nulla
             porro et praesentium.
           </p>
-          <form className="contact-form">
+          <form
+            className="contact-form"
+            action="https://formspree.io/f/xoqrjldn"
+            method="POST"
+          >
             <input
               type="email"
               className="form-input"
               placeholder="enter email"
+              name="_replyto"
             />
             <button type="submit" className="submit-btn">
               subscribe
