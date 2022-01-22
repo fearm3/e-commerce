@@ -15,15 +15,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const SingleProductPage = () => {
-  // console.log(useParams);
-  const { id } = useParams;
+  const { id } = useParams();
   const history = useHistory();
   const {
     single_product_loading: loading,
     single_product_error: error,
     single_product: product,
     fetchSingleProduct,
-  } = useProductsContext;
+  } = useProductsContext();
 
   useEffect(() => {
     fetchSingleProduct(`${url}${id}`);
@@ -54,7 +53,7 @@ const SingleProductPage = () => {
     company,
     images,
   } = product;
-  // console.log("single_product =>", images);
+  console.log("single_product =>", images);
   return (
     <Wrapper>
       <PageHero title={name} product />

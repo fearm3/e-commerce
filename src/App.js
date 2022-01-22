@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar, Sidebar, Footer } from "./components";
+
 import {
   Home,
   SingleProduct,
@@ -11,6 +12,7 @@ import {
   Products,
   PrivateRoute,
 } from "./pages";
+
 function App() {
   return (
     <Router>
@@ -29,13 +31,11 @@ function App() {
         <Route exact path="/products">
           <Products />
         </Route>
-        <Route exact path="/products/:id" children={<SingleProduct />}>
-          <Products />
-        </Route>
+        <Route exact path="/products/:id" children={<SingleProduct />} />
         <Route exact path="/checkout">
           <Checkout />
         </Route>
-        <Route exact path="*">
+        <Route path="*">
           <Error />
         </Route>
       </Switch>
