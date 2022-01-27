@@ -1,22 +1,11 @@
-## Notes
+### Authenticated with auth0
 
-#### Older React Version
+### Payment with Stripe
 
-```
-"react": "^16.13.1",
-"react-dom": "^16.13.1",
-"react-scripts": "3.4.3",
-```
+### Using formspree for subscribe
 
-#### Current React Version
+### ReACt-iCoNs
 
-```
-"react": "^17.0.1",
-"react-dom": "^17.0.1",
-"react-scripts": "4.0.0",
-```
+## Deployed with Netlify https://react-e-commerce-apps.netlify.app/
 
-#### Alternative fix
-
-.env file in the root
-FAST_REFRESH=FALSE
+![react-e-commerce](/react-e-commerce.gif)
